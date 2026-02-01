@@ -1,31 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap');
-
 :root {
   /* Color Palette */
-  --background-primary: #FFFFFF;
-  --background-secondary: #CCCCCC;
-  --text-charcoal: #545454;
-  --text-dark-gray: #8f8d8d;
+  --background-primary: #ffffff;
+  --background-secondary: #f5f5f5;
+  --text-charcoal: #222222;
+  --text-dark-gray: #555555;
   --text-medium-gray: #444444;
-  --border-light-gray: #CCCCCC;
-  --input-background: #F5F5F5;
+  --border-light-gray: #d9d9d9;
+  --input-background: #ffffff;
+  --accent-gold: #a8843f;
+  --accent-gold-dark: #8c6c2f;
 
   /* Typography */
-  --font-heading-primary: 'Bebas Neue', cursive;
-  --font-heading-secondary: 'Montserrat', sans-serif;
-  --font-body: 'Open Sans', sans-serif;
+  --font-heading-primary: Avenir, "Avenir Next", Helvetica, Arial, sans-serif;
+  --font-heading-secondary: Avenir, "Avenir Next", Helvetica, Arial, sans-serif;
+  --font-body: Avenir, "Avenir Next", Helvetica, Arial, sans-serif;
 }
 
+html,
 body {
   margin: 0;
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--background-primary);
+  background-color: #ffffff;
   color: var(--text-medium-gray);
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 1.55;
   transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+#root,
+p,
+nav,
+footer,
+button,
+input,
+textarea,
+select,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-body);
+}
+
+#root {
+  background-color: #ffffff;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -40,6 +62,12 @@ h1 {
 }
 h2 { font-size: 32px; }
 
+h1,
+h2 {
+  margin-top: 0;
+  margin-bottom: 0.6em;
+}
+
 a {
   color: var(--text-charcoal);
   text-decoration: none;
@@ -47,7 +75,7 @@ a {
 }
 
 a:hover {
-  color: var(--text-dark-gray);
+  color: var(--accent-gold);
 }
 
 * {
@@ -65,8 +93,8 @@ a:hover {
 /* --- Scroll-Based Color Inversion --- */
 
 .scrolled {
-  background-color: var(--text-charcoal);
-  color: var(--background-primary);
+  background-color: var(--background-secondary);
+  color: var(--text-charcoal);
 }
 
 .scrolled .welcome-section,
@@ -97,28 +125,28 @@ a:hover {
 .scrolled .testimonial-author,
 .scrolled .testimonial-quote,
 .scrolled .faq-question {
-  color: var(--background-primary) !important;
+  color: var(--text-charcoal) !important;
 }
 
 .scrolled .program-card,
 .scrolled .testimonial-card {
-  background-color: #1a1a1a;
-  border-color: #333;
+  background-color: var(--background-primary);
+  border-color: var(--border-light-gray);
 }
 
 .scrolled .faq-container,
 .scrolled .faq-item {
-  border-color: #333;
+  border-color: var(--border-light-gray);
 }
 
 .scrolled .contact-form-container input,
 .scrolled .contact-form-container textarea {
-  background-color: #2a2a2a;
-  color: var(--background-primary);
-  border-color: #444;
+  background-color: var(--input-background);
+  color: var(--text-charcoal);
+  border-color: var(--border-light-gray);
 }
 
 .scrolled .brush-separator,
 .scrolled .why-choose-us-item:not(:last-child)::after {
-    background-color: #555;
+    background-color: var(--border-light-gray);
 }

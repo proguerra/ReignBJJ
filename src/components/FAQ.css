@@ -1,19 +1,19 @@
 /* src/components/FAQ.css */
 
 .faq-section {
-  padding: 80px 20px;
+  padding: 65px 20px;
   background-color: var(--background-primary);
 }
 
 .faq-container {
   max-width: 800px;
   margin: 0 auto;
-  border: 1px solid #eee;
+  border: 1px solid var(--border-light-gray);
   border-radius: 8px;
 }
 
 .faq-item {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--border-light-gray);
   cursor: pointer;
 }
 

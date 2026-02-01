@@ -1,7 +1,7 @@
 /* src/components/WelcomeSection.css */
 
 .welcome-section {
-  padding: 80px 20px;
+  padding: 65px 20px;
   background-color: transparent;
 }
 
@@ -9,14 +9,14 @@
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
-  background-color: var(--background-primary);
-  padding: 60px 40px;
+  background-color: var(--background-secondary);
+  padding: 50px 36px;
   border-radius: 18px;
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.4);
 }
 
 .welcome-text-content {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
 .welcome-seo-text {
@@ -40,13 +40,13 @@
 .welcome-list li {
   margin-bottom: 15px;
   font-size: 16px;
-  color: var(--text-charcoal);
+  color: var(--text-medium-gray);
 }
 
 .welcome-info-button {
-  background-color: var(--text-charcoal);
+  background-color: var(--accent-gold);
   color: var(--background-primary);
-  border: 2px solid var(--text-charcoal);
+  border: 2px solid var(--accent-gold);
   border-radius: 30px;
   padding: 12px 30px;
   font-family: var(--font-heading-secondary);
@@ -62,7 +62,7 @@
 
 .welcome-info-button:hover {
   background-color: transparent;
-  color: var(--text-charcoal);
+  color: var(--accent-gold);
 }
 
 .welcome-image-wrapper {
@@ -73,7 +73,7 @@
   /* Enforce landscape frame */
   overflow: hidden;
   border-radius: 8px;
-  background-color: #eee;
+  background-color: var(--input-background);
   /* Placeholder bg */
 }
 
